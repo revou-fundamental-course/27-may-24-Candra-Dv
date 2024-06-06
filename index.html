@@ -1,11 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
+
 <body>
-    
+
+    <!-- navbar -->
+    <nav>
+        <img class="logo-brand" src="/assets/logo.png" alt=""></img>
+        <section>
+            <a class="nav-item" href="#home">Home</a>
+            <a class="nav-item" href="#facilities">Facilities</a>
+            <a class="nav-item" href="#message">Message Us</a>
+        </section>
+    </nav>
+
+    <!-- home -->
+    <section id="home">
+        <div class="banner-container">
+            <img class="banner-img" src="/assets/fuji.jpg" alt="">
+            <header class="banner-text">
+                <h1>Hello <span id="greeting"></span>,</h1>
+                <h2>Your Journey of Exploration Begins Here!</h2>
+            </header>
+        </div>
+    </section>
+
+
+    <!-- Facilities -->
+    <section id="facilities">
+        <header class="Facilities-txt">
+            <h1>Facilities</h1>
+            <p>We offer the perfect variety of experiences to satisfy anyone's desire for
+                adventure.</p>
+            <div class="facilities-bordir">
+                <div class="bordir"></div>
+            </div>
+        </header>
+
+        <article class="Facilities-list">
+            <div class="faci-img">
+                <img src="/assets/beach.jpg" width="200px" height="300px"></a>
+                <div class="intro">
+                    <h2 class="text-uppercase">Beach</h2>
+                    <p class="text-intro">Beach offers a beautiful views natural of the sea and sand.</p>
+                </div>
+            </div>
+            <div class="faci-img">
+                <img src="/assets/nature.jpg" width="200px" height="300px"></a>
+                <div class="intro">
+                    <h2 class="text-uppercase">Nature</h2>
+                    <p class="text-intro">Nature provides a beautiful and calming natural experience.</p>
+                </div>
+            </div>
+            <div class="faci-img">
+                <img src="/assets/cultural.jpg" width="200px" height="300px"></a>
+                <div class="intro">
+                    <h2 class="text-uppercase">cultural</h2>
+                    <p class="text-intro">Cultural attractions offer rich experiences in history and culture.
+                    </p>
+                </div>
+            </div>
+            <div class="faci-img">
+                <img src="/assets/park.jpg" width="200px" height="300px"></a>
+                <div class="intro">
+                    <h2 class="text-uppercase">Theme Park</h2>
+                    <p class="text-intro">Theme parks offer entertainment and excitement with attractions.
+                    </p>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- Message -->
+    <section id="message">
+        <header class="message-txt">
+            <h1>Message Us</h1>
+            <p>Feel free to contact us any time. We well get back to you as soon we can!.</p>
+            <div class="message-bordir">
+                <div class="bordir"></div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="contact-message">
+                <form id="form-message">
+                    <table class="contact-form">
+                        <tbody>
+                            <tr>
+                                <td>Nama</td>
+                                <td>:</td>
+                                <td>
+                                    <input type="text" class="form-control" id="name" placeholder="Name">
+                                    <div class="error" id="error-name"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tempat Lahir</td>
+                                <td>:</td>
+                                <td>
+                                    <input type="date" class="form-control" id="date">
+                                    <div class="error" id="error-date"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Jenis Kelamin</td>
+                                <td>:</td>
+                                <td class="age-options">
+                                    <input type="radio" id="male" name="gender" value="Laki-laki">
+                                    <label for="male">Laki-laki</label><br>
+                                    <input type="radio" id="female" name="gender" value="Perempuan">
+                                    <label for="female">Perempuan</label>
+                                    <div class="error" id="error-gender"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Pesan</td>
+                                <td>:</td>
+                                <td>
+                                    <textarea name="message" id="pesan" cols="36" rows="10" placeholder="Your Message"
+                                        style="width: 100%;"></textarea>
+                                    <div class="error" id="error-message"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <button type="button" class="btn btn-success w-100">Submit</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+
+            <div class="contact-result">
+                <table class="form-result" cellpadding="7">
+                    <tbody>
+                        <tr>
+                            <td>Current Date</td>
+                            <td>:</td>
+                            <td id="result-current"></td>
+                        </tr>
+                        <tr>
+                            <td>Nama</td>
+                            <td>:</td>
+                            <td id="result-name"></td>
+                        </tr>
+                        <tr>
+                            <td>Tempat Lahir</td>
+                            <td>:</td>
+                            <td id="result-date"></td>
+                        </tr>
+                        <tr>
+                            <td>Jenis Kelamin</td>
+                            <td>:</td>
+                            <td id="result-gender"></td>
+                        </tr>
+                        <tr>
+                            <td>Pesan</td>
+                            <td>:</td>
+                            <td id="result-pesan"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <p>Copy Right by Candra Dermawansyah | All Rights Reserved</p>
+    </footer>
+
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
