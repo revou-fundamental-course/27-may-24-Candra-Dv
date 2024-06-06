@@ -5,6 +5,7 @@ html {
     font-family: Arial, sans-serif;
 }
 
+/* navbar */
 nav {
     position: absolute;
     width: 100%;
@@ -33,12 +34,7 @@ nav {
     color: #EFA1A2;
 }
 
-/* .logo{
-    height: 50px;
-    width: 50px;
-    border: 1px solid black;
-} */
-
+/* banner */
 .banner-container {
     position: relative;
 }
@@ -54,9 +50,6 @@ nav {
     top: 20%;
     left: 5%;
     color: black;
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    /* padding: 10px;
-    border-radius: 5px; */
 }
 
 .banner-text h1 {
